@@ -1,0 +1,149 @@
+// text
+
+body {
+	font-family: 'Lato', helvetica, arial, sans-serif;
+	font-size: 14px;
+}
+
+p, ul li, ol li {
+	font-weight: 300;
+}
+
+.cursive {
+	font-family: cursive;
+}
+
+.monospace {
+	font-family: monospace;
+}
+
+.droid-serif {
+	font-family: 'Droid Serif', serif;
+}
+
+h1, h2 {
+	font-family: 'Droid Serif', serif;
+}
+
+// navbar
+
+.navbar {
+	margin-bottom: 0;
+	padding-top: 5px;
+	font-size: 14px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #000; 
+  border-radius: 1px;
+}
+
+#mainNav .nav > li > a { 
+	padding: 10px 30px;
+	color: #393939;
+}
+
+
+// helper classes
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+
+//header img
+
+#header-image {
+	background: -webkit-linear-gradient(rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%), -webkit-radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%), url('../images/workstation-bg.jpg') no-repeat center center;
+	background-size: cover;
+	height: 500px;
+	h1 { 
+		font-size: 2.5em;
+		line-height: 1.5em;
+		font-weight: 700;
+	}
+	p {
+		color: #fff;
+	}
+	.cursive {
+		color: #b5ebff;
+	}
+	.monospace {
+		color: #ffb8b8;
+	}
+}
+
+.banner-text {
+	color: #fff;
+	padding-top: 200px;
+}
+
+
+
+//#main-content
+
+#main-content {
+	h2 {
+		margin-bottom: 30px;
+	}
+	p {
+		color: #777;
+		line-height: 1.8em;
+		margin-bottom: 20px;
+	}
+	ul, ol {
+		li {
+			color: #777;
+		}
+	}
+	section {
+		padding: 40px 0;
+	}
+}
+
+
+
+//footer
+footer {
+	min-height: 80px;
+	background-color: #393538;
+	color: #FFF;
+	padding: 15px 0;
+	
+	ul {
+		list-style: none;
+		padding: 0;
+		
+		li { 
+			display: inline-block; 
+			padding: 10px;
+			border: 1px solid #a4a4a4;
+			border-radius: 50%;
+			
+			:hover {
+					color: #dcdcdc;
+				}
+			
+			a {
+				display: inline-block;
+				width: 3rem;
+				height: 3rem;
+				color: #fff;
+				
+				:hover {
+					color: #dcdcdc;
+				}
+			}
+		}
+	}
+	
+	p {
+		color: #a4a4a4;
+	}
+}
+
+ 

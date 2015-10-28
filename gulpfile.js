@@ -34,7 +34,6 @@ sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '/*.html'];
 jsonSources = [outputDir + '/js/*.json'];
 fontSources = [outputDir + 'fonts/*.*'];
-phpSources = [outputDir + '/*.php'];
 
 
 gulp.task('js', function(){
@@ -79,12 +78,6 @@ gulp.task('html', function(){
 		.pipe(connect.reload())
 });
 
-gulp.task('php', function(){
-	gulp.src('builds/development/*.php')
-		.pipe(gulpif(env === 'production', gulp.dest(outputDir)))
-		.pipe(connect.reload())
-});
-
 gulp.task('images', function(){
 	gulp.src('builds/development/images/**/*.*')
 		.pipe(gulpif(env === 'production', imagemin({
@@ -110,4 +103,4 @@ gulp.task('connect', function(){
 	})
 });
 
-gulp.task('default', ['html', 'php', 'json', 'js', 'compass', 'connect', 'images', 'watch']);
+gulp.task('default', ['html', 'json', 'js', 'compass', 'connect', 'images', 'watch']);
