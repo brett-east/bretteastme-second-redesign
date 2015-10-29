@@ -37,6 +37,17 @@ h1, h2 {
   border-radius: 1px;
 }
 
+.navbar-brand {
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  margin-left: 25px;
+}
+.navbar-brand img {
+  height: 100%;
+  width: auto;
+}
+
 #mainNav .nav > li > a {
   padding: 10px 30px;
   color: #393939;
@@ -48,7 +59,7 @@ h1, h2 {
 }
 
 #header-image {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), -webkit-radial-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 80%), url("../images/workstation-bg.jpg") no-repeat center center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), -webkit-radial-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 80%), url("../images/bg-1-brett-face-desk.jpg") no-repeat center center;
   background-size: cover;
   height: 500px;
 }
@@ -171,7 +182,6 @@ footer p {
 
 .project {
   height: 300px;
-  border: 1px solid red;
   display: table;
 }
 .project h2 {
@@ -189,9 +199,7 @@ footer p {
   text-decoration: none;
 }
 
-.project.sproutback .project-img {
-  background: url("../images/workstation-bg.jpg");
-  background-size: cover;
+.project .project-img {
   -webkit-filter: blur(0px);
   filter: blur(0px);
   width: 100%;
@@ -204,6 +212,10 @@ footer p {
   /* Safari */
   transition: all .3s;
 }
+.project.sproutback .project-img {
+  background: url("../images/sproutback-port.jpg");
+  background-size: cover;
+}
 .project.sproutback:hover .project-img {
   -webkit-filter: blur(4px);
   filter: blur(4px);
@@ -211,8 +223,42 @@ footer p {
 .project.sproutback:hover h2 {
   font-size: 34px;
 }
+.project.acorn .project-img {
+  background: url("../images/acorn-port.jpg");
+  background-size: cover;
+}
+.project.acorn:hover .project-img {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+.project.acorn:hover h2 {
+  font-size: 34px;
+}
+.project.bretteastme .project-img {
+  background: url("../images/bretteast-port.jpg");
+  background-size: cover;
+}
+.project.bretteastme:hover .project-img {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+.project.bretteastme:hover h2 {
+  font-size: 34px;
+}
+.project.brettfirst .project-img {
+  background: url("../images/brettfirst-port.jpg");
+  background-size: cover;
+}
+.project.brettfirst:hover .project-img {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+.project.brettfirst:hover h2 {
+  font-size: 34px;
+}
 
 /*    single-project   */
 .single-project {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
