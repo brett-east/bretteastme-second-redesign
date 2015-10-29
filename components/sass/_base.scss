@@ -96,7 +96,7 @@ h1, h2 {
 
 
 
-//#main-content
+// #main-content
 
 #main-content {
 	h2 {
@@ -119,9 +119,9 @@ h1, h2 {
 
 
 
-//footer
+// footer
 footer {
-	min-height: 80px;
+	height: 120px;
 	background-color: #393538;
 	color: #FFF;
 	padding: 15px 0;
@@ -133,22 +133,20 @@ footer {
 		li { 
 			display: inline-block; 
 			padding: 10px;
-			border: 1px solid #a4a4a4;
-			border-radius: 50%;
 			
-			:hover {
-					color: #dcdcdc;
-				}
+			margin: 0 15px;
 			
 			a {
 				display: inline-block;
-				width: 3rem;
-				height: 3rem;
 				color: #fff;
 				
 				:hover {
-					color: #dcdcdc;
+					color: #ccc;
 				}
+				
+				i {
+					font-size: 1.5em;	
+				} 
 			}
 		}
 	}
@@ -156,6 +154,27 @@ footer {
 	p {
 		color: #a4a4a4;
 	}
+}
+
+// sticky footer css-tricks dot com
+	
+
+html, body {
+  height: 100%;
+}
+#main-content {
+  	min-height: 100%;
+  	margin-bottom: -110px;
+  
+  	&:after {
+	  	content: "";
+	  	display: block;
+	  	height: 120px;
+  	} 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
 }
 
  

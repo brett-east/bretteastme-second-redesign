@@ -99,7 +99,7 @@ h1, h2 {
 }
 
 footer {
-  min-height: 80px;
+  height: 120px;
   background-color: #393538;
   color: #FFF;
   padding: 15px 0;
@@ -111,23 +111,39 @@ footer ul {
 footer ul li {
   display: inline-block;
   padding: 10px;
-  border: 1px solid #a4a4a4;
-  border-radius: 50%;
-}
-footer ul li :hover {
-  color: #dcdcdc;
+  margin: 0 15px;
 }
 footer ul li a {
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
   color: #fff;
 }
 footer ul li a :hover {
-  color: #dcdcdc;
+  color: #ccc;
+}
+footer ul li a i {
+  font-size: 1.5em;
 }
 footer p {
   color: #a4a4a4;
+}
+
+html, body {
+  height: 100%;
+}
+
+#main-content {
+  min-height: 100%;
+  margin-bottom: -110px;
+}
+#main-content:after {
+  content: "";
+  display: block;
+  height: 120px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
 }
 
 /*    about.html     */
@@ -146,6 +162,13 @@ footer p {
     filter: grayscale(80%);
   }
 }
+#header-image-about {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), -webkit-radial-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 80%), url("../images/bg-nyc-skyline-bw.jpg") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: -150px;
+}
+
 #main-content.about .img-circle {
   width: 40%;
   opacity: 1;
@@ -171,8 +194,43 @@ footer p {
 }
 
 /*     resume.html    */
+#header-image-resume {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), -webkit-radial-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 80%), url("../images/bg-macbook-cu-bw.jpg") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+}
+
+.banner-text {
+  color: #fff;
+  padding-top: 200px;
+}
+
 #main-content.resume h1 {
   font-weight: 700;
+}
+
+/*    contact.html   */
+#main-content.contact h1 {
+  font-weight: 700;
+}
+
+ul#contact-social-icons {
+  list-style: none;
+  padding: 0;
+}
+ul#contact-social-icons li {
+  display: inline-block;
+  margin: 20px 48px;
+}
+ul#contact-social-icons li a {
+  display: inline-block;
+  color: #000;
+}
+ul#contact-social-icons li a :hover {
+  color: #ccc;
+}
+ul#contact-social-icons li a i {
+  font-size: 4em;
 }
 
 /*    portfolio.html    */

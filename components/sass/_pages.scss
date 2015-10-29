@@ -18,6 +18,15 @@
 	}
 }
 
+
+#header-image-about {
+	background: -webkit-linear-gradient(rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%), -webkit-radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%), url('../images/bg-nyc-skyline-bw.jpg') no-repeat center center;
+	background-size: cover;
+	height: 300px;
+	margin-bottom: -150px;
+}
+
+
 #main-content.about {
 	
 	.img-circle {
@@ -54,13 +63,60 @@
 
 /*     resume.html    */
 
+#header-image-resume {
+	background: -webkit-linear-gradient(rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%), -webkit-radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%), url('../images/bg-macbook-cu-bw.jpg') no-repeat center center;
+	background-size: cover;
+	height: 300px;
+}
+
+.banner-text {
+	color: #fff;
+	padding-top: 200px;
+}
+
+
+
 #main-content.resume {
 	
 	h1 {
 		font-weight: 700;
 	}
+
+}
+
+/*    contact.html   */
+
+#main-content.contact {
 	
+	h1 {
+		font-weight: 700;
+	}
 	
+}
+
+ul#contact-social-icons {
+		
+	list-style: none;
+	padding: 0;
+		
+	li { 
+		display: inline-block; 
+			
+		margin: 20px 48px;
+			
+		a {
+			display: inline-block;
+			color: #000;
+			
+			:hover {
+				color: #ccc;
+			}
+				
+			i {
+				font-size: 4em;	
+			} 
+		}
+	}
 }
 
 
