@@ -210,6 +210,12 @@ html, body {
 }
 
 /*    contact.html   */
+#header-image-resume {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), -webkit-radial-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 80%), url("../images/bg-golfcourse.jpg") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+}
+
 #main-content.contact h1 {
   font-weight: 700;
 }
@@ -312,6 +318,17 @@ ul#contact-social-icons li a i {
   filter: blur(4px);
 }
 .project.brettfirst:hover h2 {
+  font-size: 34px;
+}
+.project.justforfun .project-img {
+  background: url("../images/justforfun-port.jpg");
+  background-size: cover;
+}
+.project.justforfun:hover .project-img {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+.project.justforfun:hover h2 {
   font-size: 34px;
 }
 
