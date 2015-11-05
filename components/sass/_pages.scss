@@ -86,7 +86,7 @@
 
 /*    contact.html   */
 
-#header-image-resume {
+#header-image-contact {
 	background: -webkit-linear-gradient(rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%), -webkit-radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%), url('../images/bg-golfcourse.jpg') no-repeat center center;
 	background-size: cover;
 	height: 300px;
@@ -298,6 +298,97 @@ ul#contact-social-icons {
 
 
 
+/*  hireme   */
+
+#header-image-hireme {
+	background: -webkit-linear-gradient(rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), -webkit-radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 90%), url('../images/bg-sup.jpg') no-repeat center center;
+	background-size: cover;
+	height: 300px;
+}
+
+.hireme {
+	
+	font-size: 16px;
+	
+	.progress {
+		background-color: #dcdcdc;
+	}
+	.progress-bar {
+		text-align: left;
+		
+		span {	
+			margin-left: 10px;
+		}
+	}
+}
+
+.progress-bar {
+	&.bar1 {
+		background-color: #0ed27d;
+	}
+	&.bar2 {
+		background-color: #d10e56;
+	}
+	&.bar3 {
+		background-color: #0eaed1;
+	}
+	&.bar4 {
+		background-color: #d1a30e;
+	}
+	&.bar5 {
+		background-color: #c40ed1;
+	}
+	&.bar6 {
+		background-color: #0e5fd1;
+	}
+	&.bar7 {
+		background-color: #d10e3c;
+	}
+}
+
+
+.hireme li {
+	line-height: 1.8em;
+	margin-bottom: 20px;
+}
+
+.key-enclosure {
+	position: relative;
+}
+
+.key, .first-key, .last-key {
+	
+	width: 20%;
+	font-size: .8em;
+	line-height: 1em;
+	display: block;
+	float: left;
+	padding: 5px 15px;
+	position: relative;
+	
+	&:after {
+		content: "";
+		background: #000;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 40px;
+		width: 1px;
+	}
+	
+}
+
+.last-key {
+	&:before {
+		content: "";
+		background: #000;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 40px;
+		width: 1px;
+	}
+}
 
 
 
