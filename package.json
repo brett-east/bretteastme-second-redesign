@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap_project_baseline",
-  "version": "0.0.1",
-  "description": "Add project description here",
+  "name": "brett_east_website",
+  "version": "0.0.2",
+  "description": "Brett East website",
   "author": "Brett East",
   "license": "ISC",
   "devDependencies": {
