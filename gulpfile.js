@@ -25,7 +25,7 @@ if (env === 'development'){
 	outputDir = 'builds/development/';
 	sassStyle = 'expanded';
 } else {
-	outputDir = 'builds/production/';
+	outputDir = '../bretteast-production/';
 	sassStyle = 'compact';
 }
 	
@@ -92,7 +92,7 @@ gulp.task('images', function(){
 gulp.task('json', function(){
 	gulp.src('builds/development/js/*.json')
 		.pipe(gulpif(env === 'production', jsonminify()))
-		.pipe(gulpif(env === 'production', gulp.dest('builds/production/js')))
+		.pipe(gulpif(env === 'production', gulp.dest(outputDir + 'js')))
 		.pipe(connect.reload())
 });
 
