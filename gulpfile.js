@@ -14,6 +14,7 @@ var env,
 	jsSources,
 	sassSources,
 	htmlSources,
+	blogSources,
 	jsonSources,
 	fontSources,
 	outputDir,
@@ -32,6 +33,7 @@ if (env === 'development'){
 jsSources = ['components/scripts/base.js'];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '/*.html'];
+blogSources = ['builds/development/blog/'];
 jsonSources = [outputDir + '/js/*.json'];
 fontSources = [outputDir + 'fonts/*.*'];
 
@@ -77,6 +79,13 @@ gulp.task('html', function(){
 		.pipe(connect.reload())
 });
 
+gulp.task('blog', function(){
+  gulp.src('builds/development/blog/**')
+		.pipe(gulpif(env === 'production', minifyHTML()))
+		.pipe(gulpif(env === 'production', gulp.dest(outputDir + 'blog')))
+		.pipe(connect.reload())
+});
+
 gulp.task('images', function(){
 	gulp.src('builds/development/images/**/*.*')
 		.pipe(gulpif(env === 'production', imagemin({
@@ -102,4 +111,4 @@ gulp.task('connect', function(){
 	})
 });
 
-gulp.task('default', ['html', 'json', 'js', 'compass', 'connect', 'images', 'watch']);
+gulp.task('default', ['html', 'json', 'js', 'blog', 'compass', 'connect', 'images', 'watch']);
