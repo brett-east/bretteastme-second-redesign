@@ -15,6 +15,7 @@ var env,
 	sassSources,
 	htmlSources,
 	blogSources,
+	portfolioSources,
 	jsonSources,
 	fontSources,
 	outputDir,
@@ -34,6 +35,7 @@ jsSources = ['builds/development/js/*.js'];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '/*.html'];
 blogSources = ['builds/development/blog/'];
+portfolioSources = ['builds/development/portfolio/'];
 jsonSources = [outputDir + '/js/*.json'];
 fontSources = [outputDir + 'fonts/*.*'];
 
@@ -84,6 +86,13 @@ gulp.task('blog', function(){
 		.pipe(connect.reload())
 });
 
+gulp.task('portfolio', function(){
+  gulp.src('builds/development/portfolio/**')
+		.pipe(gulpif(env === 'production', minifyHTML()))
+		.pipe(gulpif(env === 'production', gulp.dest(outputDir + 'portfolio')))
+		.pipe(connect.reload())
+});
+
 gulp.task('images', function(){
 	gulp.src('builds/development/images/**/*.*')
 		.pipe(gulpif(env === 'production', imagemin({
@@ -109,4 +118,4 @@ gulp.task('connect', function(){
 	})
 });
 
-gulp.task('default', ['html', 'json', 'js', 'blog', 'compass', 'connect', 'images', 'watch']);
+gulp.task('default', ['html', 'json', 'js', 'blog', 'portfolio', 'compass', 'connect', 'images', 'watch']);
