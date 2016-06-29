@@ -417,3 +417,8 @@ ul#contact-social-icons li a i {
   height: 40px;
   width: 1px;
 }
+
+/* blog */
+#main-content.blog h1 a:hover {
+  text-decoration: none;
+}

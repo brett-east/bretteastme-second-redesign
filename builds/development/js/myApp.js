@@ -7,7 +7,7 @@
 		
 		return {
 			restrict: 'E',
-			templateUrl: 'main-nav.html',
+			templateUrl: '/main-nav.html',
 			replace: true
 		};
 		
@@ -18,7 +18,7 @@
 		
 		return {
 			restrict: 'E',
-			templateUrl: 'main-footer.html',
+			templateUrl: '/main-footer.html',
 			replace: true
 		};
 		
