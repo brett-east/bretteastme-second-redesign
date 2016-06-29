@@ -30,7 +30,7 @@ if (env === 'development'){
 	sassStyle = 'compact';
 }
 	
-jsSources = ['components/scripts/base.js'];
+jsSources = ['builds/development/js/*.js'];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '/*.html'];
 blogSources = ['builds/development/blog/'];
@@ -39,10 +39,8 @@ fontSources = [outputDir + 'fonts/*.*'];
 
 
 gulp.task('js', function(){
-	gulp.src(jsSources)
-		.pipe(concat('script.js'))
-		.pipe(gulpif(env === 'production', uglify()))
-		.pipe(gulp.dest(outputDir + '/js'))
+	gulp.src('builds/development/js/*.js')
+		.pipe(gulpif(env === 'production', gulp.dest(outputDir + 'js')))
 		.pipe(connect.reload())
 });
 
@@ -65,7 +63,7 @@ gulp.task('compass', function(){
 });
 
 gulp.task('watch', function(){
-	gulp.watch(jsSources, ['js']);
+	gulp.watch('builds/development/js/*.js', ['js']);
 	gulp.watch('components/sass/*.scss', ['compass']);
 	gulp.watch('builds/development/**/*.html', ['html']);
 	gulp.watch('builds/development/js/*.json', ['json']);
