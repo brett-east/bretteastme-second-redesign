@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- social meta tags -->
+    <meta name="description" content="A look at the floating labels pattern" />
+    
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Floating Labels">
+    <meta itemprop="description" content="A look at the floating labels pattern - by Brett East">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:site" content="@bretteast">
+    <meta name="twitter:title" content="Floating Labels">
+    <meta name="twitter:description" content="A look at the floating labels pattern - by Brett East">
+    <meta name="twitter:creator" content="@bretteast">
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Floating Labels" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://bretteast.me/blog/floating-labels.html" />
+    <meta property="og:description" content="A look at the floating labels pattern" />
+    <meta property="og:site_name" content="BrettEast.me" />
+    
+    <title>Brett East | Blog - Floating Labels</title>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,900,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    
+    <!-- HighlightJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/codepen-embed.min.css">
+
+	<link rel="stylesheet" href="/css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	  	<div class="container-fluid">
+		  	<div class="row">
+		  	  <main-nav></main-nav>
+		  	</div><!-- .row -->
+	  	</div><!-- .container-fluid -->
+	  
+	  	
+	  	<div id="main-content" class="container-fluid blog-post">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+					<article>
+						<h1 class="text-center">Floating Labels - a design pattern</h1>
+						<section>
+						  <p>You may have recently seen a new design pattern in web and mobile form fields called Floating Labels. Popularised in a <a href="http://bradfrost.com/blog/post/float-label-pattern/" target="_blank">blog post by Brad Frost</a> and referencing a <a href="https://dribbble.com/shots/1254439--GIF-Mobile-Form-Interaction" target="_blank">gif mockup by Matt D Smith</a>, I thought that I would show my own working version of the concept.</p>
+						  <img class="img-responsive" src="/images/matt-d-smith-floating-labels.gif" alt="A floating labels example by Matt D Smith" style="margin: 0 auto 40px; width: 400px; " />
+						  <p>To begin with I wanted to redesign the input fields for a site that I was working on that the time - they were using left aligned labels in some places and labels positioned inside the form field, both of which pose problems for small screens</p>
+						  <p>It was also important to be semantic, my background working for the Australian government has (fortunately) instilled a strong need to write semantic and wcag2.0 friendly code. It was also important for usability reasons to have additional 'helper' or 'placeholder' text if necessary.</p>
+						  
+						  <p data-height="938" data-theme-id="21248" data-slug-hash="yJarjo" data-default-tab="result" data-user="bretteast" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/bretteast/pen/yJarjo/">Contact form modal</a> by Brett East (<a href="http://codepen.io/bretteast">@bretteast</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+              <p>In the above example I add and remove a style to the label based on whether or not the field has a value or focus, and remove it on blur if nothing has been entered.<p>
+              <p>This is a relatively simple approach and I use it to also allow for additional 'placeholder' text. As you can see in the textarea, the placeholder text disappears when the label floats to the top.</p>
+              
+              <p class="lead">I welcome any feedback on improving this design in the discussion section and feel free to go ahead and fork the codepen.</p>
+              						  
+						</section>					
+					</article>
+					<section>
+					  <div id="disqus_thread"></div>
+            <script>
+                
+                var disqus_config = function () {
+                    this.page.url = 'http://bretteast.me/blog/floating-labels.html'; 
+                };
+                
+                (function() {  // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    
+                    s.src = '//bretteastme.disqus.com/embed.js';
+                    
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+					</section>
+					</div><!-- .col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</div><!-- .container-fluid -->	
+	  
+			  
+			  
+	<main-footer></main-footer>			  
+			  
+		
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-48899357-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+    <script src="/js/myApp.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
