@@ -422,3 +422,10 @@ ul#contact-social-icons li a i {
 #main-content.blog h1 a:hover {
   text-decoration: none;
 }
+
+pre {
+  overflow-x: scroll;
+}
+pre code {
+  white-space: pre;
+}
