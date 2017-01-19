@@ -4,6 +4,9 @@
   "description": "Brett East website",
   "author": "Brett East",
   "license": "ISC",
+  "scripts": {
+    "start" : ""
+  }
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-compass": "^2.0.3",

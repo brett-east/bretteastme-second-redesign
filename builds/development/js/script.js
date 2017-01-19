@@ -1,5 +1,5 @@
-$(function(){
+//$(function(){
   
-  hljs.initHighlightingOnLoad();
+//  hljs.initHighlightingOnLoad();
   
-});
+//});

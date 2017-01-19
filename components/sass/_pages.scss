@@ -263,6 +263,28 @@ ul#contact-social-icons {
 			}
 			
 	}
+  
+  &.image-pan-zoom {
+		
+		.project-img {
+			background: url('../images/image-pan-zoom-port.png');
+			background-size: cover;		
+		
+		}
+	
+		&:hover { 
+				.project-img {
+					-webkit-filter: blur(4px);
+					filter: blur(4px);
+				}
+			
+				h2 {
+					font-size: 34px;
+				}
+			
+			}
+			
+	}
 	
 	&.justforfun {
 		

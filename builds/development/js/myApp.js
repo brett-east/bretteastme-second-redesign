@@ -2,6 +2,17 @@
 	
 	angular.module("myApp", [])
 	
+  
+  .directive("mainHead", function() {
+		
+		return {
+			restrict: 'E',
+      title: '@',
+			templateUrl: '/main-head.html',
+			replace: true
+		};
+		
+	})
 	
 	.directive("mainNav", function() {
 		
