@@ -276,71 +276,49 @@ ul#contact-social-icons li a i {
   /* Safari */
   transition: all .3s;
 }
-.project.sproutback .project-img {
-  background: url("../images/sproutback-port.jpg");
-  background-size: cover;
-}
-.project.sproutback:hover .project-img {
+.project:hover .project-img {
   -webkit-filter: blur(4px) grayscale(30%);
   filter: blur(4px) grayscale(30%);
 }
-.project.sproutback:hover h2 {
+.project:hover h2 {
   font-size: 34px;
 }
-.project.acorn .project-img {
-  background: url("../images/acorn-port.jpg");
+.project.sproutback .project-img {
+  background: url("../images/sproutback-port.jpg");
   background-size: cover;
-}
-.project.acorn:hover .project-img {
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
-}
-.project.acorn:hover h2 {
-  font-size: 34px;
 }
 .project.bretteastme .project-img {
   background: url("../images/bretteast-port.jpg");
   background-size: cover;
 }
-.project.bretteastme:hover .project-img {
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
-}
-.project.bretteastme:hover h2 {
-  font-size: 34px;
-}
-.project.brettfirst .project-img {
-  background: url("../images/brettfirst-port.jpg");
-  background-size: cover;
-}
-.project.brettfirst:hover .project-img {
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
-}
-.project.brettfirst:hover h2 {
-  font-size: 34px;
-}
 .project.image-pan-zoom .project-img {
   background: url("../images/image-pan-zoom-port.png");
   background-size: cover;
 }
-.project.image-pan-zoom:hover .project-img {
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
-}
-.project.image-pan-zoom:hover h2 {
-  font-size: 34px;
-}
-.project.justforfun .project-img {
-  background: url("../images/justforfun-port.jpg");
+.project.node-chat .project-img {
+  background: url("../images/node-chat-port.png");
   background-size: cover;
+  background-position: center;
 }
-.project.justforfun:hover .project-img {
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
+.project.weather-app .project-img {
+  background: url("../images/get-weather-port.png");
+  background-size: cover;
+  background-position: center;
 }
-.project.justforfun:hover h2 {
-  font-size: 34px;
+.project.golfer-app .project-img {
+  background: url("../images/golfer-app-port.png");
+  background-size: cover;
+  background-position: center;
+}
+.project.timer-app .project-img {
+  background: url("../images/timer-port.png");
+  background-size: cover;
+  background-position: center;
+}
+.project.todo-app .project-img {
+  background: url("../images/todo-app-port.png");
+  background-size: cover;
+  background-position: center;
 }
 
 /*    single-project   */
