@@ -20,7 +20,9 @@
 
 
 #header-image-about {
-	background: -webkit-linear-gradient(rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%), -webkit-radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%), url('../images/bg-nyc-skyline-bw.jpg') no-repeat center center;
+	background:	linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%),
+							radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%),
+							url('../images/bg-nyc-skyline-bw.jpg') no-repeat center center;
 	background-size: cover;
 	height: 300px;
 	margin-bottom: -150px;
@@ -64,7 +66,9 @@
 /*     resume.html    */
 
 #header-image-resume {
-	background: -webkit-linear-gradient(rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%), -webkit-radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%), url('../images/bg-macbook-cu-bw.jpg') no-repeat center center;
+	background: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%),
+							radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%),
+							url('../images/bg-macbook-cu-bw.jpg') no-repeat center center;
 	background-size: cover;
 	height: 300px;
 }
@@ -87,7 +91,9 @@
 /*    contact.html   */
 
 #header-image-contact {
-	background: -webkit-linear-gradient(rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%), -webkit-radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%), url('../images/bg-golfcourse.jpg') no-repeat center center;
+	background: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%),
+							radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%),
+							url('../images/bg-golfcourse.jpg') no-repeat center center;
 	background-size: cover;
 	height: 300px;
 }
@@ -115,7 +121,7 @@ ul#contact-social-icons {
 			color: #000;
 
 			:hover {
-				color: #ccc;
+				color: #999;
 			}
 
 			i {
@@ -161,8 +167,8 @@ ul#contact-social-icons {
 
 .project {
 	.project-img {
-		-webkit-filter: blur(0px) grayscale(70%);
-		filter: blur(0px) grayscale(70%);
+		-webkit-filter: blur(0px) grayscale(30%);
+		filter: blur(0px) grayscale(30%);
 		width: 100%;
 		height: 100%;
 		position: absolute;
@@ -174,8 +180,8 @@ ul#contact-social-icons {
 	}
 	&:hover {
 		.project-img {
-			-webkit-filter: blur(4px) grayscale(30%);
-			filter: blur(4px) grayscale(30%);
+			-webkit-filter: blur(4px) grayscale(80%);
+			filter: blur(4px) grayscale(80%);
 		}
 		h2 {
 			font-size: 34px;

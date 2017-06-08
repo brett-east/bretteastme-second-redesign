@@ -37,7 +37,7 @@ h1, h2 {
   display: block;
   width: 22px;
   height: 2px;
-  background-color: #000; 
+  background-color: #000;
   border-radius: 1px;
 }
 
@@ -46,14 +46,14 @@ h1, h2 {
 	width: 35px;
 	height: 35px;
 	margin-left: 25px;
-	
+
 	img {
 		height: 100%;
 		width: auto;
 	}
 }
 
-#mainNav .nav > li > a { 
+#mainNav .nav > li > a {
 	padding: 10px 30px;
 	color: #393939;
 }
@@ -70,10 +70,12 @@ h1, h2 {
 //header img
 
 #header-image {
-	background: -webkit-linear-gradient(rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%), -webkit-radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%), url('../images/bg-1-brett-face-desk.jpg') no-repeat center center;
+	background: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%),
+							radial-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%),
+							url('../images/bg-1-brett-face-desk.jpg') no-repeat center center;
 	background-size: cover;
 	height: 500px;
-	h1 { 
+	h1 {
 		font-size: 2.5em;
 		line-height: 1.5em;
 		font-weight: 700;
@@ -125,39 +127,39 @@ footer {
 	background-color: #393538;
 	color: #FFF;
 	padding: 15px 0;
-	
+
 	ul {
 		list-style: none;
 		padding: 0;
-		
-		li { 
-			display: inline-block; 
+
+		li {
+			display: inline-block;
 			padding: 10px;
-			
+
 			margin: 0 15px;
-			
+
 			a {
 				display: inline-block;
 				color: #fff;
-				
+
 				:hover {
 					color: #ccc;
 				}
-				
+
 				i {
-					font-size: 1.5em;	
-				} 
+					font-size: 1.5em;
+				}
 			}
 		}
 	}
-	
+
 	p {
 		color: #a4a4a4;
 	}
 }
 
 // sticky footer css-tricks dot com
-	
+
 
 html, body {
   height: 100%;
@@ -165,16 +167,14 @@ html, body {
 #main-content {
   	min-height: 100%;
   	margin-bottom: -110px;
-  
+
   	&:after {
 	  	content: "";
 	  	display: block;
 	  	height: 120px;
-  	} 
+  	}
 }
 .page-wrap:after {
   content: "";
   display: block;
 }
-
- 
